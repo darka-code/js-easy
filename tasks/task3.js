@@ -2,7 +2,13 @@
 // повертає їхню суму. Використовуйте цикл для обчислення суми.
 
 function sumArray(numbers) {
-  // Ваш код тут
+  let sum = 0;
+
+  for (const num of numbers) {
+    sum += num;
+  }
+
+  return sum; // Переконайтеся, що return знаходиться ВСЕРЕДИНІ функції!
 }
 
 console.log(sumArray([1, 2, 3, 4, 5])); // Виведе: 15

@@ -1,12 +1,18 @@
 // Задача: Напишіть функцію countOccurrences, яка приймає рядок і символ,
-//  і повертає кількість входжень цього символу в рядку.
-
+// і повертає кількість входжень цього символу в рядку.
 
 function countOccurrences(str, char) {
-  //Ваш код
+  let count = 0;
+
+  for (const c of str) {
+    if (c === char) {
+      count++;
+    }
+  }
+
+  return count;
 }
 
-// Приклади використання:
 console.log(countOccurrences("hello world", 'o')); // Виведе: 2
 console.log(countOccurrences("banana", 'a'));       // Виведе: 3
 
